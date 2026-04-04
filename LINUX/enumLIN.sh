@@ -108,6 +108,13 @@ function netconf_checks {
 	netstat -rn
 }
 
+function cron_checks {
+
+	echo -e "$CYAN\n---CHECKING CRON JOBS...---\n$WHITE"
+	ls -la /etc/cron.*/ /var/spool/cron/crontabs 2>/dev/null
+	cat /etc/crontab
+}
+
 function process_checks {
 
 	echo -e "$CYAN\n---CHECKING RUNNING PROCESSES...---\n$WHITE"
@@ -134,5 +141,6 @@ user_checks
 fs_checks
 files_checks
 netconf_checks
+cron_checks
 process_checks
 os_infos
