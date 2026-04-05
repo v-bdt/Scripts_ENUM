@@ -20,7 +20,7 @@ function user_checks { # Checks current user
 		echo -e "\nNo sudo rights or user password is required to check them..."
 	else
 		echo -e "$RED\nUser has sudo rights:\n\n$WHITE" 
-		echo -e "$PRIVS" | grep --color -E " \*|env_keep\W*\+=.*LD_PRELOAD|env_keep\W*\+=.*LD_LIBRARY_PATH|env_keep\W*\+=.*BASH_ENV|env_keep\W*\+=.* ENV|[^a-zA-Z0-9]7z$|aa-exec$|[^a-zA-Z0-9]ab$|alpine$|ansible-playbook$|ansible-test$|aoss$|apache2$|apache2ctl$|apt-get$|[^a-zA-Z0-9]ar$|aria2c$|[^a-zA-Z0-9]arj$|[^a-zA-Z0-9]arp$|[^a-zA-Z0-9]as$|ascii-xfr$|ascii85$|[^a-zA-Z0-9]ash$|aspell$|[^a-zA-Z0-9]at$|atobm$|[^a-zA-Z0-9]aws$|base32$|base58$|base64$|basenc$|basez$|bash$|batcat$|[^a-zA-Z0-9]bc$|bconsole$|bpftrace$|bridge$|bundle$|busctl$|busybox$|byebug$|bzip2$|cabal$|cancel$|capsh$|[^a-zA-Z0-9]cat$|cdist$|certbot$|check_by_ssh$|check_cups$|check_log$|check_memory$|check_raid$|check_ssl_cert$|check_statusfile$|chmod$|choom$|chown$|chroot$|clamscan$|[^a-zA-Z0-9]cmp$|cobc$|column$|comm$|composer$|cowsay$|cowthink$|[^a-zA-Z0-9]cp$|cpan$|cpio$|cpulimit$|crash$|crontab$|[^a-zA-Z0-9]csh$|csplit$|csvtool$|[^a-zA-Z0-9]ctr$|cupsfilter$|curl$|[^a-zA-Z0-9]cut$|dash$|date$|[^a-zA-Z0-9]dc$|[^a-zA-Z0-9]dd$|debugfs$|dialog$|diff$|[^a-zA-Z0-9]dig$|distcc$|dmesg$|dmsetup$|[^a-zA-Z0-9]dnf$|doas$|docker$|dos2unix$|dosbox$|dotnet$|dpkg$|dstat$|dvips$|easy_install$|[^a-zA-Z0-9]eb$|[^a-zA-Z0-9]ed$|efax$|egrep$|elvish$|emacs$|enscript$|[^a-zA-Z0-9]env$|[^a-zA-Z0-9]eqn$|espeak$|[^a-zA-Z0-9]ex$|exiftool$|expand$|expect$|facter$|fail2ban-client$|fgrep$|file$|find$|finger$|fish$|flock$|[^a-zA-Z0-9]fmt$|fold$|fping$|[^a-zA-Z0-9]ftp$|gawk$|[^a-zA-Z0-9]gcc$|gcloud$|gcore$|[^a-zA-Z0-9]gdb$|[^a-zA-Z0-9]gem$|genie$|genisoimage$|[^a-zA-Z0-9]ghc$|ghci$|gimp$|ginsh$|[^a-zA-Z0-9]git$|[^a-zA-Z0-9]grc$|grep$|gtester$|gzip$|hashcat$|head$|hexdump$|highlight$|hping3$|iconv$|iftop$|install$|ionice$|[^a-zA-Z0-9]ip$|[^a-zA-Z0-9]irb$|ispell$|[^a-zA-Z0-9]jjs$|[^a-zA-Z0-9]joe$|join$|journalctl$|[^a-zA-Z0-9]jq$|jrunscript$|jtag$|julia$|knife$|ksshell$|[^a-zA-Z0-9]ksu$|kubectl$|latex$|latexmk$|ld.so$|ldconfig$|less$|lftp$|links$|[^a-zA-Z0-9]ln$|loginctl$|logrotate$|logsave$|look$|[^a-zA-Z0-9]lp$|ltrace$|[^a-zA-Z0-9]lua$|lualatex$|luatex$|lwp-download$|lwp-request$|mail$|make$|[^a-zA-Z0-9]man$|mawk$|minicom$|more$|mosquitto$|mount$|msfconsole$|ALL|*|$"
+		echo -e "$PRIVS" | grep --color -E " \*|env_keep\W*\+=.*LD_PRELOAD|env_keep\W*\+=.*LD_LIBRARY_PATH|env_keep\W*\+=.*BASH_ENV|env_keep\W*\+=.* ENV|[^a-zA-Z0-9]7z$|aa-exec$|[^a-zA-Z0-9]ab$|alpine$|ansible-playbook$|ansible-test$|aoss$|apache2$|apache2ctl$|apt-get$|[^a-zA-Z0-9]ar$|aria2c$|[^a-zA-Z0-9]arj$|[^a-zA-Z0-9]arp$|[^a-zA-Z0-9]as$|ascii-xfr$|ascii85$|[^a-zA-Z0-9]ash$|aspell$|[^a-zA-Z0-9]at$|atobm$|[^a-zA-Z0-9]aws$|base32$|base58$|base64$|basenc$|basez$|bash$|batcat$|[^a-zA-Z0-9]bc$|bconsole$|bpftrace$|bridge$|bundle$|busctl$|busybox$|byebug$|bzip2$|cabal$|cancel$|capsh$|[^a-zA-Z0-9]cat$|cdist$|certbot$|check_by_ssh$|check_cups$|check_log$|check_memory$|check_raid$|check_ssl_cert$|check_statusfile$|chmod$|choom$|chown$|chroot$|clamscan$|[^a-zA-Z0-9]cmp$|cobc$|column$|comm$|composer$|cowsay$|cowthink$|[^a-zA-Z0-9]cp$|cpan$|cpio$|cpulimit$|crash$|crontab$|[^a-zA-Z0-9]csh$|csplit$|csvtool$|[^a-zA-Z0-9]ctr$|cupsfilter$|curl$|[^a-zA-Z0-9]cut$|dash$|date$|[^a-zA-Z0-9]dc$|[^a-zA-Z0-9]dd$|debugfs$|dialog$|diff$|[^a-zA-Z0-9]dig$|distcc$|dmesg$|dmsetup$|[^a-zA-Z0-9]dnf$|doas$|docker$|dos2unix$|dosbox$|dotnet$|dpkg$|dstat$|dvips$|easy_install$|[^a-zA-Z0-9]eb$|[^a-zA-Z0-9]ed$|efax$|egrep$|elvish$|emacs$|enscript$|[^a-zA-Z0-9]env$|[^a-zA-Z0-9]eqn$|espeak$|[^a-zA-Z0-9]ex$|exiftool$|expand$|expect$|facter$|fail2ban-client$|fgrep$|file$|find$|finger$|fish$|flock$|[^a-zA-Z0-9]fmt$|fold$|fping$|[^a-zA-Z0-9]ftp$|gawk$|[^a-zA-Z0-9]gcc$|gcloud$|gcore$|[^a-zA-Z0-9]gdb$|[^a-zA-Z0-9]gem$|genie$|genisoimage$|[^a-zA-Z0-9]ghc$|ghci$|gimp$|ginsh$|[^a-zA-Z0-9]git$|[^a-zA-Z0-9]grc$|grep$|gtester$|gzip$|hashcat$|head$|hexdump$|highlight$|hping3$|iconv$|iftop$|install$|ionice$|[^a-zA-Z0-9]ip$|[^a-zA-Z0-9]irb$|ispell$|[^a-zA-Z0-9]jjs$|[^a-zA-Z0-9]joe$|join$|journalctl$|[^a-zA-Z0-9]jq$|jrunscript$|jtag$|julia$|knife$|ksshell$|[^a-zA-Z0-9]ksu$|kubectl$|latex$|latexmk$|ld.so$|ldconfig$|less$|lftp$|links$|[^a-zA-Z0-9]ln$|loginctl$|logrotate$|logsave$|look$|[^a-zA-Z0-9]lp$|ltrace$|[^a-zA-Z0-9]lua$|lualatex$|luatex$|lwp-download$|lwp-request$|mail$|make$|[^a-zA-Z0-9]man$|mawk$|minicom$|more$|mosquitto$|mount$|msfconsole$|ALL|\*|$"
 	fi
 
 # Checks existing users / groups
@@ -127,7 +127,7 @@ function programs_checks {
 	echo -e "$CYAN\n---CHECKING PROGRAMS...---\n$WHITE"
 	
 	sudo=$(sudo -V | head -n1)
-	if [ -z sudo ]
+	if [ -z "$sudo" ]
 	then
 		echo -e "Sudo not installed\n"
 	else
@@ -136,7 +136,7 @@ function programs_checks {
 	fi
 	
 	screen=$(screen --version)
-	if [ -z screen ]
+	if [ -z "$screen" ]
 	then
 		echo -e "Screen not installed\n"
 	else
@@ -145,13 +145,23 @@ function programs_checks {
 	fi
 	
 	polkit=$(pkexec --version | head -n1 && apt list --installed | grep --color policykit)
-	if [ -z polkit ]
+	if [ -z "$polkit" ]
 	then
 		echo -e "Polkit not installed\n"
 	else
 		echo -e "$CYAN\nPolkit Version :\n$WHITE"
-		echo -e "$polkit" | grep --color -E "0.105|$"
+		echo -e "$polkit" | grep --color -E "0\.105|$"
 	fi
+	
+	logrotate=$(logrotate --version)
+	if [ -z "$logrotate" ]
+	then
+		echo -e "Logrotate not installed\n"
+	else
+		echo -e "$CYAN\nLogrotate Version :\n$WHITE"
+		echo -e "$logrotate" | grep --color -E "3.8.6|3.1[158]|$"
+	fi
+	
 	
 	
 	
@@ -180,6 +190,6 @@ fs_checks
 files_checks
 netconf_checks
 process_checks
-os_infos
 cron_checks
 programs_checks
+os_infos
