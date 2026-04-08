@@ -300,9 +300,9 @@ function get_delegations {
 function get_writable_objects {
 	if [ $auth_protocol == "KERBEROS" ]
 	then
-		bloodyAD --host $dc_hostname -d $domain -u $user -p $password -k get writable
+		bloodyAD --host $dc_hostname -d $domain -u $user -p $password -k get writable --detail
 	else
-		bloodyAD --host $dc_ip -d $domain -u $user -p $password get writable
+		bloodyAD --host $dc_ip -d $domain -u $user -p $password get writable --detail
 	fi
 	result
 }
